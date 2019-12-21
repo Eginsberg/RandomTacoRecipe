@@ -54,7 +54,23 @@ document.add_picture('new_taco.jpg')
 
 # Adding the picture
 
-document.save('Taco Recipe Book.docx')
+document.add_paragraph('Image author : Tai\"s Captures')
+
+# Giving the image author credit
+
+document.add_paragraph('https://taco-1150.herokuapp.com/random/?full_taco=true')
+
+# Adding random taco API link
+
+document.add_paragraph('Project made by Ethan Ginsberg')
+
+# Adding my own name
+
+document.add_page_break()
+
+# Inserting page break
+
+document.save('Taco_Recipe_Book.docx')
 
 # I make sure to actually save the document
 
