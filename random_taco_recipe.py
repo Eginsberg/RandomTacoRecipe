@@ -48,6 +48,11 @@ document = docx.Document()
 header = document.sections[0].header
 header.add_paragraph('Random Taco Cookbook')
 
+# Adding the header
+
+document.add_picture('new_taco.jpg')
+
+# Adding the picture
 
 document.save('Taco Recipe Book.docx')
 
