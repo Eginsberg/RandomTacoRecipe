@@ -38,3 +38,18 @@ image.save('new_taco.jpg')
 # I then saved the image
 
 data = requests.get('https://taco-1150.herokuapp.com/random/?full_taco=true').json()
+
+# I start the next part by requesting the data
+
+document = docx.Document()
+
+# I then create the initial document
+
+header = document.sections[0].header
+header.add_paragraph('Random Taco Cookbook')
+
+
+document.save('Taco Recipe Book.docx')
+
+# I make sure to actually save the document
+
